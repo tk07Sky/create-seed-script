@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "lib": ["esnext"],
+    "baseUrl": "app",
+    "types": [
+      "@types/node",
+      "@types/google-apps-script"
+    ]
+  },
+  "exclude": ["node_modules", "set-script-id.js"],
+  "include": ["app/**/*.ts"]
+}

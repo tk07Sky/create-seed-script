@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <base target="_top">
+  <style>
+    .create-sheet_header {
+      font-size: 22px;
+    }
+    .create-sheet_inputs {
+      margin-bottom: 20px;
+    }
+    .create-sheet_inputs_input {
+      border-radius: 8px;
+      border: solid 1px #c7c7c7;
+      font-size: 16px;
+      padding: 8px 10px;
+    }
+    .create-sheet_submit {
+      text-align: center;
+      padding: 4px;
+      width: 30%;
+      font-size: 16px;
+      border-radius: 8px;
+      border: solid 1px #1f74ff;
+      color: #1f74ff;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <h1 class="create-sheet_header">新しくシートを作る</h1>
+    <form>
+      <div class="create-sheet_inputs">
+        <label>モデル名： <input class="create-sheet_inputs_input" v-model="sheetName" type="text"></label>
+      </div>
+      <button class="create-sheet_submit" type="submit" @click="createNewSheet">
+        作成
+      </button>
+    </form>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
+  <script>
+    new Vue({
+      el: '#app',
+      data: function() {
+        return {
+          sheetName: '',
+        };
+      },
+      methods: {
+        createNewSheet() {
+          google.script.run
+            .withSuccessHandler(function() {
+              google.script.host.close()
+            })
+            .createNewSheet(this.sheetName);
+        },
+      },
+    });
+  </script>
+</body>
+</html>

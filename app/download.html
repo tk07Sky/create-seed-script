@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+  </head>
+  <body>
+<?
+  for (var i = 0; i < results.length; i++) {
+    output.append("<div><a download='" + results[i].name + ".txt' href='data:," + results[i].output + "'>" + results[i].name + "をダウンロード</a></div>");
+  }
+?>
+  </body>
+</html>

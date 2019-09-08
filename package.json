@@ -1,0 +1,29 @@
+{
+  "name": "create-seed-script",
+  "version": "0.0.1",
+  "author": "tk07Sky",
+  "description": "Create RoR seeds script",
+  "scripts": {
+    "push": "clasp push",
+    "prepush": "node set-script-id.js"
+  },
+  "dependencies": {
+    "@types/google-apps-script": "^0.0.58"
+  },
+  "devDependencies": {
+    "@google/clasp": "^2.2.1",
+    "@typescript-eslint/eslint-plugin": "^2.1.0",
+    "@typescript-eslint/parser": "^2.1.0",
+    "dotenv": "^8.1.0",
+    "eslint": "^6.3.0",
+    "eslint-config-prettier": "^6.2.0",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "prettier": "^1.18.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tk07Sky/create-seed-script"
+  },
+  "license": "MIT"
+}
