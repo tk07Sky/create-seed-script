@@ -1,5 +1,5 @@
 # create-seed-script
-Ruby on Railsのseedを作成するスクリプトです。
+Ruby on Railsのseedを作成するスクリプトです。  
 [clasp](https://github.com/google/clasp)を使用し、ローカルでスクリプトを作成したあと、GASにデプロイして使います。
 
 # setup
@@ -49,5 +49,5 @@ seed作成コマンド → seed出力
 ## Q&A
 
 ### modeとは?
-`seed`もしくは`seed_once`を設定してください（初期値は`seed`）
+`seed`もしくは`seed_once`を設定してください（初期値は`seed`）  
 主キーに対応する値を一度だけ出力するか、何度も書き換えるかを指定します。
