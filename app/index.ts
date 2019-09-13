@@ -14,11 +14,11 @@ function onOpen() {
   const spreadsheet = SpreadsheetApp.getActiveSpreadsheet();
   const entries: Entry[] = [
     {
-      displayName: 'シート追加',
+      name: 'シート追加',
       functionName: 'addSheet',
     },
     {
-      displayName: 'seed出力',
+      name: 'seed出力',
       functionName: 'createSeeds',
     },
   ];

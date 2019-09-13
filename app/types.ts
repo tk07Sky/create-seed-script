@@ -1,5 +1,5 @@
 export type Entry = {
-  displayName: string;
+  name: string;
   functionName: string;
 };
 
